@@ -1,0 +1,30 @@
+html {
+    font-size: 125%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    scroll-behavior: smooth;
+    color: #2f373f;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
