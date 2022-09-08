@@ -1,5 +1,10 @@
-
 footer p {
-    margin-top: 40px;
-    font-size: 0.8rem;
+    margin: 40px 0 20px;
+    font-size: 0.6rem;
+    a {
+        font-size: 0.6rem;
+        
+    }::before {
+            height: 0.5px;
+        }
 }

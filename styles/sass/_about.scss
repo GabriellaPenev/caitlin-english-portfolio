@@ -1,0 +1,21 @@
+
+.about-flex-container {
+    display: flex;
+    .about-text {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding-left: 40px;
+        h2 {
+            opacity: 0.85;
+        }
+        p {
+            margin: 10px 0;
+        }
+    }
+    .about-image {
+        width: 30%;
+    }
+}
