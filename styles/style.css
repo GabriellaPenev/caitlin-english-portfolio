@@ -268,9 +268,40 @@ img {
   display: block;
 }
 
+h2 {
+  font-size: clamp(0.9rem, 3.5vw, 1.5rem);
+}
+
 p {
   font-size: clamp(0.8rem, 2vw, 0.9rem);
   font-weight: 300;
+}
+
+nav ul a,
+footer p a {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #2f373f;
+  position: relative;
+}
+
+nav ul a::before,
+footer p a::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 1px;
+  width: 0px;
+  height: 1px;
+  background: #2f373f none repeat scroll;
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+nav ul a:hover::before,
+nav ul a:focus::before,
+footer p a:hover::before,
+footer p a:focus::before {
+  width: 100%;
 }
 
 .h1-container {
@@ -320,29 +351,6 @@ nav ul {
           justify-content: space-evenly;
   margin: 30px 0;
   text-transform: uppercase;
-}
-
-a {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  color: #2f373f;
-  position: relative;
-}
-
-a::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 1px;
-  width: 0px;
-  height: 1px;
-  background: #2f373f none repeat scroll;
-  -webkit-transition: width 0.6s ease;
-  transition: width 0.6s ease;
-}
-
-a:hover::before,
-a:focus::before {
-  width: 100%;
 }
 
 .home-flex-container {
@@ -429,13 +437,133 @@ a:focus::before {
   width: 30%;
 }
 
+.project-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-header {
+  margin: 60px auto;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(47, 55, 63)), to(rgba(47, 55, 63, 0.35)));
+  background: linear-gradient(to right, rgb(47, 55, 63), rgba(47, 55, 63, 0.35));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.project-header::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(47, 55, 63)), to(rgba(47, 55, 63, 0.35)));
+  background: linear-gradient(to right, rgb(47, 55, 63), rgba(47, 55, 63, 0.35));
+}
+
+.current a,
+.project-text a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.current {
+  text-align: left;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(47, 55, 63, 0.6);
+}
+
+.current-reverse {
+  text-align: right;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(47, 55, 63, 0.6);
+}
+.project .project-image {
+  width: 80%;
+}
+.project .project-text {
+  margin-right: 40px;
+  text-align: left;
+}
+.project .project-text h2 {
+  margin-top: 0;
+}
+
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.reverse .project-text {
+  margin-right: 0;
+  margin-left: 40px;
+  text-align: right;
+}
+
+.contact-text {
+  margin-top: 80px;
+}
+
+.contact-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-icons ul li {
+  padding: 0 25px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  opacity: 0.8;
+}
+.contact-icons ul li :active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.contact-icons ul li:hover, .contact-icons ul li:focus {
+  opacity: 1;
+  scale: 1.1;
+}
+.contact-icons ul li a {
+  font-size: 2.6rem;
+  color: #2f373f;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
 footer p {
-  margin: 40px 0 20px;
+  margin: 100px 0 20px;
   font-size: 0.6rem;
 }
 footer p a {
   font-size: 0.6rem;
+  display: inline-block;
 }
-footer p ::before {
-  height: 0.5px;
+footer p a::before {
+  opacity: 0.8;
+  bottom: -1px;
 }

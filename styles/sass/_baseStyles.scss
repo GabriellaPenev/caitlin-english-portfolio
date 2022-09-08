@@ -32,7 +32,37 @@ img {
     display: block;
 }
 
+h2 {
+    font-size: clamp(.9rem, 3.5vw, 1.5rem);
+}
+
 p {
     font-size: clamp(0.8rem, 2vw, 0.9rem);
     font-weight: 300;
+}
+
+nav ul a,
+footer p a {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: #2f373f;
+    position: relative;
+}
+
+nav ul a::before,
+footer p a::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    width: 0px;
+    height: 1px;
+    background: #2f373f none repeat scroll;
+    transition: width .6s ease;
+}
+
+nav ul a:hover::before, 
+nav ul a:focus::before,
+footer p a:hover::before, 
+footer p a:focus::before {
+    width: 100%;
 }

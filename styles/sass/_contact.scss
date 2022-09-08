@@ -1,0 +1,28 @@
+
+.contact-text {
+    margin-top: 80px;
+}
+
+.contact-icons ul {
+    display: flex;
+    justify-content: center;
+    li {
+        padding: 0 25px;
+        transition: .3s ease all;
+        opacity: 0.8;
+        :active {
+            transform: scale(0.9);
+        }
+        &:hover, 
+        &:focus {
+            opacity: 1;
+            scale: (1.1);
+        }
+        a {
+            font-size: 2.6rem;
+            color: #2f373f;  
+            transition: .3s ease all;
+        }
+    }
+}
+

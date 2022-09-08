@@ -1,10 +1,12 @@
 footer p {
-    margin: 40px 0 20px;
+    margin: 100px 0 20px;
     font-size: 0.6rem;
     a {
         font-size: 0.6rem;
-        
-    }::before {
-            height: 0.5px;
+        display: inline-block;
+    }
+    a::before {
+            opacity: 0.8;
+            bottom: -1px;
         }
 }

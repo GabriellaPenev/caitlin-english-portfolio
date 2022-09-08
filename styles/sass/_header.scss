@@ -34,25 +34,3 @@ nav ul {
     margin: 30px 0;
     text-transform: uppercase;
 }
-
-a {
-    font-size: clamp(0.8rem, 2vw, 1rem);
-    color: #2f373f;
-    position: relative;
-}
-
-a::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: 1px;
-    width: 0px;
-    height: 1px;
-    background: #2f373f none repeat scroll;
-    transition: width .6s ease;
-}
-
-a:hover::before, 
-a:focus::before {
-    width: 100%;
-}
