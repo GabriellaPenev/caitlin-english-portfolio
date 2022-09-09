@@ -6,12 +6,12 @@
 }
 
 h1 {
-    font-size: clamp(1.2rem, 5vw, 3.5rem);
+    font-size: clamp(1.2rem, 5vw, 2.8rem);
     text-transform: uppercase;
     font-weight: 400;
     margin: 40px 0 10px;
     letter-spacing: 0.5rem;
-    background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35));
+    background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35) 110%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -20,12 +20,13 @@ h1 {
 h1::before {
     content: "";
     position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
+    top: 117%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    left: 50%;
     height: 2px;
     border-radius: 10px;
-    background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35));
+    background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35) 110%);
 }
 
 nav ul {
