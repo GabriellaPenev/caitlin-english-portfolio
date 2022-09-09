@@ -4,7 +4,7 @@ const button = document.querySelector('.btn');
 
 let i = 0;
 const txt = 'I write with heart and curiosity...';
-const speed = 65;
+const speed = 100;
 
 function typeWriter() {
     if (i < txt.length) {
