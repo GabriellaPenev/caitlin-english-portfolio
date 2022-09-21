@@ -471,13 +471,11 @@ nav ul {
     opacity: 0;
   }
 }
-.about-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.about-header {
+  text-align: left;
 }
-.about-flex-container .about-text {
-  width: 80%;
+
+.about-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,13 +487,9 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
-  padding-left: 40px;
 }
-.about-flex-container .about-text p {
+.about-text p {
   margin: 10px 0;
-}
-.about-flex-container .about-image {
-  width: 20%;
 }
 
 .project-header-container {
@@ -515,8 +509,8 @@ nav ul {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.2rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(47, 55, 63)), to(rgba(47, 55, 63, 0.35)));
-  background: linear-gradient(to right, rgb(47, 55, 63), rgba(47, 55, 63, 0.35));
+  background: -webkit-gradient(linear, left top, right top, from(rgb(47, 55, 63)), color-stop(120%, rgba(47, 55, 63, 0.35)));
+  background: linear-gradient(to right, rgb(47, 55, 63), rgba(47, 55, 63, 0.35) 120%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -558,6 +552,7 @@ nav ul {
 }
 .project .project-text h2 {
   margin-top: 0;
+  text-transform: capitalize;
 }
 
 .reverse {

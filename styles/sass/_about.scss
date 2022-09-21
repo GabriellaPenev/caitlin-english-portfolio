@@ -1,18 +1,15 @@
 
-.about-flex-container {
-    display: flex;
-    .about-text {
-        width: 80%;
+.about-header {
+    text-align: left;
+}
+
+.about-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        padding-left: 40px;
         p {
             margin: 10px 0;
         }
-    }
-    .about-image {
-        width: 20%;
-    }
 }
+

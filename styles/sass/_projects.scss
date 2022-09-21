@@ -9,7 +9,7 @@
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35));
+    background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35) 120%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -44,6 +44,7 @@
         width: 65%;
         h2 {
             margin-top: 0;
+            text-transform: capitalize;
         }
     }
 }
