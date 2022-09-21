@@ -379,50 +379,17 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.home-image {
-  width: 65%;
-}
-.home-image img {
-  border: none;
-  border-radius: 60px 20px;
-}
-
-.home-text {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 55, 63, 0.7)), color-stop(45%, rgb(47, 55, 63)));
-  background: linear-gradient(to right, rgba(47, 55, 63, 0.7), rgb(47, 55, 63) 45%);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-text {
   padding: 20px;
-  position: absolute;
-  width: 45%;
-  left: 0;
-  top: 30%;
-  min-height: 150px;
-  border: none;
-  border-radius: 10px 60px;
-  opacity: 0.95;
 }
 .home-text h2 {
   font-size: clamp(1rem, 3vw, 2rem);
@@ -430,16 +397,30 @@ nav ul {
   margin: 15px 0 0;
 }
 
+.home-image {
+  position: relative;
+}
+
+.tagline {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  background-color: transparent;
+  width: 295px;
+  padding: 5px;
+  text-align: left;
+}
+
 .input-cursor {
   display: inline-block;
   width: 1px;
   height: 0.8rem;
+  background-color: #2f373f;
   margin-left: -2.5px;
-  background-color: white;
   -webkit-animation: blink 0.6s linear infinite alternate;
           animation: blink 0.6s linear infinite alternate;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 5.3s;
+          animation-delay: 5.3s;
 }
 
 @-webkit-keyframes blink {
@@ -473,6 +454,12 @@ nav ul {
 }
 .about-header {
   text-align: left;
+  padding-top: 60px;
+}
+.about-header span {
+  display: block;
+  padding: 20px 0;
+  font-size: clamp(0.8rem, 3.5vw, 1.1rem);
 }
 
 .about-text {
@@ -724,17 +711,13 @@ footer p a::before {
     padding-left: 0;
     text-align: center;
   }
-  .about-flex-container .about-image {
-    width: 200px;
-    margin-bottom: 20px;
-  }
   button {
     right: 5px;
   }
 }
 @media (max-width: 610px) {
-  .home-text {
-    width: 60%;
+  .wrapper {
+    width: 90%;
   }
   .project {
     -webkit-box-orient: vertical;
@@ -772,13 +755,8 @@ footer p a::before {
     transition: 0.3s ease all;
     letter-spacing: 0.12rem;
   }
-  .home-text {
-    width: 80%;
-    padding: 10px;
-    top: 65%;
-  }
-  .home-image {
-    width: 70%;
+  .tagline {
+    left: 10%;
   }
 }
 @media (max-width: 400px) {
@@ -792,5 +770,9 @@ footer p a::before {
   }
   .project-header:last-child {
     margin-top: 5px;
+  }
+  .tagline {
+    left: 5%;
+    bottom: 5%;
   }
 }

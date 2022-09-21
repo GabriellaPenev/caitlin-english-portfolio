@@ -11,12 +11,7 @@
             padding-left: 0;
             text-align: center;
         }
-        .about-image {
-            width: 200px;
-            margin-bottom: 20px;
-        }
     }
-
     button {
         right: 5px;
     }
@@ -24,8 +19,9 @@
 }
 
 @media ( max-width: 610px ){
-    .home-text {
-        width: 60%;
+
+    .wrapper {
+        width: 90%;
     }
 
     .project {
@@ -61,14 +57,8 @@
         letter-spacing: 0.12rem;
     }
 
-    .home-text {
-        width: 80%;
-        padding: 10px;
-        top: 65%;
-    }
-
-    .home-image {
-        width: 70%;
+    .tagline {
+        left: 10%;
     }
 }
 
@@ -84,5 +74,10 @@
 
     .project-header:last-child {
         margin-top: 5px;
+    }
+
+    .tagline {
+        left: 5%;
+        bottom: 5%;
     }
 }

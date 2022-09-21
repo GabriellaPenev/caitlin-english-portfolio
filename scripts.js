@@ -1,10 +1,9 @@
 const app = {}
 
-const button = document.querySelector('.btn');
 
 let i = 0;
 const txt = 'I write with heart and curiosity...';
-const speed = 100;
+const speed = 150;
 
 function typeWriter() {
     if (i < txt.length) {
@@ -13,6 +12,8 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
 }
+
+const button = document.querySelector('.btn');
 
 const displayButton = () => {
     window.addEventListener('scroll', () => {

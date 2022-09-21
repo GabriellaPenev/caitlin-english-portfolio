@@ -1,6 +1,12 @@
 
 .about-header {
     text-align: left;
+    padding-top: 60px;
+    span {
+        display: block;
+        padding: 20px 0;
+        font-size: clamp(0.8rem, 3.5vw, 1.1rem);
+    }
 }
 
 .about-text {
