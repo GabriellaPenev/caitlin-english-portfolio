@@ -127,13 +127,3 @@ a span {
     }
 }
 
-.scroll {
-    font-size: .9rem;
-    opacity: 0.6;
-    transition: 0.3s ease all;
-    &:hover,
-    &:focus {
-        opacity: 1;
-    }
-}
-

@@ -403,7 +403,7 @@ nav ul {
 
 .tagline {
   position: absolute;
-  bottom: 10%;
+  top: 10%;
   left: 20%;
   background-color: transparent;
   width: 295px;
@@ -637,16 +637,6 @@ a span::after {
           transform: translateX(-1px) rotate(0deg);
 }
 
-.scroll {
-  font-size: 0.9rem;
-  opacity: 0.6;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-}
-.scroll:hover, .scroll:focus {
-  opacity: 1;
-}
-
 .contact-text {
   margin-top: 80px;
 }
@@ -773,6 +763,6 @@ footer p a::before {
   }
   .tagline {
     left: 5%;
-    bottom: 5%;
+    top: 5%;
   }
 }
