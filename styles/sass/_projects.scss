@@ -27,34 +27,26 @@
     background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35));
 }
 
+.produced, 
+.in-dev {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .project {
     display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    padding: 0 10px 60px 10px;
     justify-content: space-between;
     margin-bottom: 60px;
-    padding-bottom: 60px;
     border-bottom: 1px solid rgba(47, 55, 63, 0.6);
-
-    .project-image {
-        width: 30%;
-    }
-
     .project-text {
-        margin-right: 40px;
-        text-align: left;
-        width: 65%;
+        text-align: center;
         h2 {
             margin-top: 0;
             text-transform: capitalize;
         }
-    }
-}
-
-.reverse {
-    flex-direction: row-reverse;
-    .project-text {
-        margin-right: 0;
-        margin-left: 40px;
-        text-align: right;
     }
 }
 
