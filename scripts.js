@@ -2,8 +2,8 @@ const app = {}
 
 
 let i = 0;
-const txt = 'I write with heart and curiosity...';
-const speed = 165;
+const txt = '  I write with heart and curiosity...';
+const speed = 120;
 
 function typeWriter() {
     if (i < txt.length) {

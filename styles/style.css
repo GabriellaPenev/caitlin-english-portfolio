@@ -418,10 +418,10 @@ nav ul {
   height: 0.8rem;
   background-color: #2f373f;
   margin-left: -2.5px;
-  -webkit-animation: blink 0.6s linear infinite alternate;
-          animation: blink 0.6s linear infinite alternate;
-  -webkit-animation-delay: 6.5s;
-          animation-delay: 6.5s;
+  -webkit-animation: blink 0.5s linear infinite alternate;
+          animation: blink 0.5s linear infinite alternate;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 @-webkit-keyframes blink {
