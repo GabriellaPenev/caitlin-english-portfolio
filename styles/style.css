@@ -455,11 +455,11 @@ nav ul {
 }
 .about-header {
   text-align: left;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 .about-header span {
   display: block;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: clamp(0.8rem, 3.5vw, 1.1rem);
 }
 
