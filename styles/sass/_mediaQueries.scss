@@ -6,6 +6,10 @@
         width: 90%;
     }
 
+    .home-image {
+        width: 100%;
+    }
+
     .about-flex-container {
         flex-direction: column;
         justify-content: center;
@@ -36,7 +40,8 @@
     }
 
     .tagline {
-        left: 10%;
+        left: 5%;
+        top: 5%;
     }
 
     .project {
@@ -58,8 +63,9 @@
         margin-top: 5px;
     }
 
-    .tagline {
-        left: 5%;
-        top: 5%;
+    button {
+        border-radius: 50%;
+        background-color: white;
+        right: 5px;
     }
 }

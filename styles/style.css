@@ -405,7 +405,7 @@ nav ul {
 .tagline {
   position: absolute;
   top: 10%;
-  left: 20%;
+  left: 5%;
   background-color: transparent;
   width: 295px;
   padding: 5px;
@@ -685,6 +685,9 @@ footer p a::before {
   .wrapper {
     width: 90%;
   }
+  .home-image {
+    width: 100%;
+  }
   .about-flex-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -717,7 +720,8 @@ footer p a::before {
     letter-spacing: 0.12rem;
   }
   .tagline {
-    left: 10%;
+    left: 5%;
+    top: 5%;
   }
   .project {
     width: 100%;
@@ -735,8 +739,9 @@ footer p a::before {
   .project-header:last-child {
     margin-top: 5px;
   }
-  .tagline {
-    left: 5%;
-    top: 5%;
+  button {
+    border-radius: 50%;
+    background-color: white;
+    right: 5px;
   }
 }
