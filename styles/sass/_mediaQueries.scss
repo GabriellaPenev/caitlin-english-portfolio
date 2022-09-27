@@ -28,6 +28,10 @@
         }
     }
 
+    .project {
+        width: 100%;
+    }
+    
     .project-text {
         width: 100%;
     }
@@ -62,10 +66,6 @@
         top: 5%;
     }
 
-    .project {
-        width: 100%;
-    }
-
     textarea {
         height: 100px;
         margin: 10px 0;
@@ -95,9 +95,4 @@
         margin-top: 5px;
     }
 
-    .btn {
-        border-radius: 50%;
-        background-color: white;
-        right: 5px;
-    }
 }

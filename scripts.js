@@ -1,21 +1,11 @@
 const app = {}
 
-
 let i = 0;
 const txt = '    I write with heart and curiosity...';
 const speed = 130;
-
-function typeWriter() {
-    if (i < txt.length) {
-        document.querySelector(".autotype").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-
 const button = document.querySelector('.btn');
 
-const displayButton = () => {
+displayButton = () => {
     window.addEventListener('scroll', () => {
 
         if (window.scrollY > 200) {
@@ -26,7 +16,7 @@ const displayButton = () => {
     });
 };
 
-const scrollToTop = () => {
+scrollToTop = () => {
     button.addEventListener("click", () => {
         window.scroll({
             top: 0,
@@ -36,7 +26,26 @@ const scrollToTop = () => {
     });
 };
 
-const form = document.getElementById("contact-form");
+homePage = () => {
+    if (document.body.id === 'home') {
+        window.onload = typeWriter(); 
+    } else {
+        null
+    }
+}
+
+typeWriter = () => {
+    if (i < txt.length) {
+        document.querySelector(".autotype").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+contactPage = () => {
+    if (document.body.id === 'contact') {
+        
+        const form = document.getElementById("contact-form");
 
         async function handleSubmit(event) {
             event.preventDefault();
@@ -66,12 +75,19 @@ const form = document.getElementById("contact-form");
             });
         }
         form.addEventListener("submit", handleSubmit)
+    } else {
+        null
+    }
+}
+
+
 
 app.init = () => {
-
+    
     displayButton();
     scrollToTop();
-    window.onload = typeWriter();
+    homePage();
+    contactPage()
 
 }
 

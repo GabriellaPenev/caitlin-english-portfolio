@@ -777,6 +777,9 @@ footer p a::before {
     padding-left: 0;
     text-align: center;
   }
+  .project {
+    width: 100%;
+  }
   .project-text {
     width: 100%;
   }
@@ -807,9 +810,6 @@ footer p a::before {
     left: 5%;
     top: 5%;
   }
-  .project {
-    width: 100%;
-  }
   textarea {
     height: 100px;
     margin: 10px 0;
@@ -832,10 +832,5 @@ footer p a::before {
   }
   .project-header:last-child {
     margin-top: 5px;
-  }
-  .btn {
-    border-radius: 50%;
-    background-color: white;
-    right: 5px;
   }
 }
