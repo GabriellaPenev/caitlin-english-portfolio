@@ -522,7 +522,6 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 60px;
 }
 .project .project-text {
   text-align: center;
@@ -779,6 +778,7 @@ footer p a::before {
   .project {
     width: 100%;
     border-bottom: 1px solid rgba(47, 55, 63, 0.6);
+    margin-bottom: 60px;
   }
   .project-text {
     width: 100%;
