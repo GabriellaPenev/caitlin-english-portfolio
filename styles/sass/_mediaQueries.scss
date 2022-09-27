@@ -41,9 +41,12 @@
         flex-direction: column;
         input {
             width: 100%;
+        }   
     }
-}
 
+    .contact-flex-container {
+        width: 80%;
+    }
 }
 
 
@@ -62,6 +65,15 @@
     .project {
         width: 100%;
     }
+
+    .contact-icons ul li {
+        margin-bottom: 20px;
+    }
+
+    .contact-flex-container {
+        width: 100%;
+    }
+
 }
 
 @media ( max-width: 400px ) {
