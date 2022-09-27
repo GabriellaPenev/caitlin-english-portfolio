@@ -615,8 +615,8 @@ a span::after {
           transform: translateX(-1px) rotate(0deg);
 }
 
-.contact-text {
-  margin-top: 40px;
+.contact-header {
+  margin-top: 20px;
 }
 
 textarea {
@@ -807,6 +807,10 @@ footer p a::before {
   }
   .project {
     width: 100%;
+  }
+  textarea {
+    height: 80px;
+    margin: 10px 0;
   }
   .contact-icons ul li {
     margin-bottom: 20px;
