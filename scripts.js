@@ -1,11 +1,11 @@
-const app = {}
+const portfolio = {}
 
 let i = 0;
 const txt = '    I write with heart and curiosity...';
 const speed = 130;
 const button = document.querySelector('.btn');
 
-displayButton = () => {
+portfolio.displayButton = () => {
     window.addEventListener('scroll', () => {
 
         if (window.scrollY > 200) {
@@ -16,7 +16,7 @@ displayButton = () => {
     });
 };
 
-scrollToTop = () => {
+portfolio.scrollToTop = () => {
     button.addEventListener("click", () => {
         window.scroll({
             top: 0,
@@ -26,23 +26,23 @@ scrollToTop = () => {
     });
 };
 
-homePage = () => {
+portfolio.homePage = () => {
     if (document.body.id === 'home') {
-        window.onload = typeWriter(); 
+        window.onload = portfolio.typeWriter(); 
     } else {
         null
     }
 }
 
-typeWriter = () => {
+portfolio.typeWriter = () => {
     if (i < txt.length) {
         document.querySelector(".autotype").innerHTML += txt.charAt(i);
         i++;
-        setTimeout(typeWriter, speed);
+        setTimeout(portfolio.typeWriter, speed);
     }
 }
 
-contactPage = () => {
+portfolio.contactPage = () => {
     if (document.body.id === 'contact') {
         
         const form = document.getElementById("contact-form");
@@ -80,16 +80,12 @@ contactPage = () => {
     }
 }
 
-
-
-app.init = () => {
-    
-    displayButton();
-    scrollToTop();
-    homePage();
-    contactPage()
-
+portfolio.init = () => {
+    portfolio.displayButton();
+    portfolio.scrollToTop();
+    portfolio.homePage();
+    portfolio.contactPage()
 }
 
-app.init();
+portfolio.init();
 
