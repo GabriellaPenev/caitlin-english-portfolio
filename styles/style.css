@@ -473,7 +473,8 @@ nav ul {
 }
 
 .project-header {
-  margin: 60px auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.2rem;
@@ -617,6 +618,7 @@ a span::after {
 
 .contact-header {
   margin-top: 20px;
+  text-transform: capitalize;
 }
 
 textarea {

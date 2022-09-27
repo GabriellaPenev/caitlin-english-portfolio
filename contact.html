@@ -62,7 +62,7 @@
             <div class="wrapper">
                 <h2 class="contact-header">connect with me</h2>
 
-                <form action="https://formspree.io/f/mdojgjvq" method="POST">
+                <form id="contact-form" action="https://formspree.io/f/mdojgjvq" method="POST">
                     <fieldset>
                         <div class="form-inputs">
                             <label for="name" class="sr-only">Name></label>
@@ -77,12 +77,13 @@
                         </div>
 
                         <label for="submit" class="sr-only">write me a message</label>
-                        <textarea id="submit" name="message" placeholder="write me a message" maxlength="300"
+                        <textarea id="submit" name="message" placeholder="write me a message" maxlength="500"
                             required></textarea>
 
                         <button type="submit" class="submit">Send Message</button>
 
                     </fieldset>
+                    <p id="form-status"></p>
                 </form>
             </div>
             <div class="wrapper contact-flex-container">

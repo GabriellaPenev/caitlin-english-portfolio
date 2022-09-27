@@ -2,8 +2,8 @@ const app = {}
 
 
 let i = 0;
-const txt = '   I write with heart and curiosity...';
-const speed = 125;
+const txt = '    I write with heart and curiosity...';
+const speed = 130;
 
 function typeWriter() {
     if (i < txt.length) {
@@ -36,7 +36,36 @@ const scrollToTop = () => {
     });
 };
 
+const form = document.getElementById("contact-form");
 
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const status = document.getElementById("form-status");
+            const data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your message!";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form. Please try again."
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your message. Please try again."
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
 
 app.init = () => {
 
