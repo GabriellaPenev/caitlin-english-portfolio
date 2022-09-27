@@ -809,7 +809,7 @@ footer p a::before {
     width: 100%;
   }
   textarea {
-    height: 80px;
+    height: 100px;
     margin: 10px 0;
   }
   .contact-icons ul li {
