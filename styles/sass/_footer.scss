@@ -10,3 +10,22 @@ footer p {
             bottom: -1px;
         }
 }
+
+.btn {
+    display: none;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 10;
+    color: #2f373f;
+    transition: 0.3s ease all;
+    &:active {
+        transform: scale(.8);
+    }
+}

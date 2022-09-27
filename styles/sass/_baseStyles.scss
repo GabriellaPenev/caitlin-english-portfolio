@@ -43,7 +43,8 @@ p {
 }
 
 nav ul a,
-footer p a {
+footer p a, 
+fieldset {
     font-size: clamp(0.8rem, 2vw, 1rem);
     color: #2f373f;
     position: relative;
@@ -66,23 +67,4 @@ nav ul a:focus::before,
 footer p a:hover::before, 
 footer p a:focus::before {
     width: 100%;
-}
-
-button {
-    display: none;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    border-radius: 50%;
-    font-size: 1.8rem;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    z-index: 10;
-    color: #2f373f;
-    transition: 0.3s ease all;
-    &:active {
-        transform: scale(.8);
-    }
 }

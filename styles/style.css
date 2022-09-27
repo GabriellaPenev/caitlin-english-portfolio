@@ -278,7 +278,8 @@ p {
 }
 
 nav ul a,
-footer p a {
+footer p a,
+fieldset {
   font-size: clamp(0.8rem, 2vw, 1rem);
   color: #2f373f;
   position: relative;
@@ -302,27 +303,6 @@ nav ul a:focus::before,
 footer p a:hover::before,
 footer p a:focus::before {
   width: 100%;
-}
-
-button {
-  display: none;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
-  border-radius: 50%;
-  font-size: 1.8rem;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 25px;
-  z-index: 10;
-  color: #2f373f;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-}
-button:active {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
 }
 
 .h1-container {
@@ -668,6 +648,54 @@ a span::after {
   transition: 0.3s ease all;
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-bottom: 1px solid #2f373f;
+  margin: 30px 0 60px 0;
+  outline: none;
+}
+
+.form-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+fieldset input {
+  border: none;
+  border-bottom: 1px solid #2f373f;
+  text-align: left;
+  width: calc(33.3333333333% - 10px);
+  padding: 10px 0;
+}
+fieldset :focus {
+  outline: none;
+}
+
+.submit {
+  border: none;
+  border-bottom: 1px solid #2f373f;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-weight: normal;
+}
+.submit:hover, .submit:focus {
+  cursor: pointer;
+}
+
 footer p {
   margin: 100px 0 20px;
   font-size: 0.6rem;
@@ -679,6 +707,27 @@ footer p a {
 footer p a::before {
   opacity: 0.8;
   bottom: -1px;
+}
+
+.btn {
+  display: none;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 10;
+  color: #2f373f;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.btn:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 @media (max-width: 800px) {
@@ -714,9 +763,18 @@ footer p a::before {
   .project-text {
     width: 100%;
   }
-  button {
+  .btn {
     right: 10px;
     font-size: 1.3rem;
+  }
+  .form-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-inputs input {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -745,7 +803,7 @@ footer p a::before {
   .project-header:last-child {
     margin-top: 5px;
   }
-  button {
+  .btn {
     border-radius: 50%;
     background-color: white;
     right: 5px;

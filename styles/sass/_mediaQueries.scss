@@ -28,14 +28,22 @@
         }
     }
 
-        .project-text {
-            width: 100%;
-        }
+    .project-text {
+        width: 100%;
+    }
 
-    button {
+    .btn {
         right: 10px;
         font-size: 1.3rem;
     }
+
+    .form-inputs {
+        flex-direction: column;
+        input {
+            width: 100%;
+    }
+}
+
 }
 
 
@@ -70,7 +78,7 @@
         margin-top: 5px;
     }
 
-    button {
+    .btn {
         border-radius: 50%;
         background-color: white;
         right: 5px;
