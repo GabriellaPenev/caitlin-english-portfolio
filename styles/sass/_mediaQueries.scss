@@ -17,6 +17,11 @@
         width: 100%;
     }
 
+    .tagline {
+        left: 4%;
+        top: 4%;
+    }
+
     .about-flex-container {
         flex-direction: column;
         justify-content: center;
@@ -55,7 +60,6 @@
     }
 }
 
-
 @media ( max-width: 500px ){
 
     h1 {
@@ -64,8 +68,10 @@
     }
 
     .tagline {
-        left: 5%;
-        top: 5%;
+        left: 2%;
+        top: 0%;
+        margin-top: 10px;
+        font-size: 0.75rem;
     }
 
     textarea {
@@ -84,6 +90,7 @@
 }
 
 @media ( max-width: 400px ) {
+
     footer p {
         transition: 0.3s ease all;
         margin-top: 180px;
