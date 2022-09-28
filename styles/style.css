@@ -850,7 +850,7 @@ footer p a::before {
   nav ul li {
     padding: 0 4px;
   }
-  .project-header:last-child {
-    margin-top: 5px;
+  .projects-flex-container > div:nth-child(1) > h2:nth-child(1) {
+    margin-top: 0;
   }
 }
