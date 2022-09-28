@@ -840,7 +840,6 @@ footer p a::before {
 @media (max-width: 400px) {
   .tagline {
     width: 135px;
-    left: 0;
   }
   footer p {
     -webkit-transition: 0.3s ease all;
