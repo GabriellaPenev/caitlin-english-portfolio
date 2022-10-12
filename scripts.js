@@ -2,7 +2,7 @@ const portfolio = {}
 
 let i = 0;
 const txt = '    I write with heart and curiosity...';
-const speed = 130;
+const speed = 145;
 const button = document.querySelector('.btn');
 
 portfolio.displayButton = () => {

@@ -20,10 +20,10 @@
 
 .tagline {
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 4%;
+    left: 3%;
     background-color: transparent;
-    width: 265px;
+    width: 465px;
     padding: 5px;
     text-align: left;
     font-size: clamp(0.7rem, 2.5vw, 1.4rem);
@@ -39,7 +39,7 @@
     background-color: #2f373f;
     margin-left: -2.5px;
     animation: blink .5s linear infinite alternate;
-    animation-delay: 5s;
+    animation-delay: 6.5s;
 }
 
 @keyframes blink {

@@ -57,42 +57,16 @@
         </nav>
     </header>
 
-    <main>
-        <section class="animate__animated animate__fadeIn">
-            <div class="wrapper">
-                <h2 class="contact-header">connect with me</h2>
-
-                <form id="contact-form" action="https://formspree.io/f/mzbwrqde" method="POST">
-                    <fieldset>
-                        <div class="form-inputs">
-                            <label for="name" class="sr-only">Name></label>
-                            <input type="text" name="name" id="name" placeholder="name" maxlength="60" required>
-
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" name="email" id="email" placeholder="email" maxlength="60" required>
-
-                            <label for="subject" class="sr-only">Subject</label>
-                            <input type="text" name="subject" id="subject" placeholder="subject" maxlength="60"
-                                required>
-                        </div>
-
-                        <label for="submit" class="sr-only">write me a message</label>
-                        <textarea id="submit" name="message" placeholder="write me a message" maxlength="500"
-                            required></textarea>
-
-                        <button type="submit" class="submit">Send Message</button>
-
-                    </fieldset>
-                    <p id="form-status"></p>
-                </form>
-            </div>
-            <div class="wrapper contact-flex-container">
+    <main class="wrapper animate__animated animate__fadeIn">
+        <h2 class="contact-header">connect with me</h2>
+        <section class="contact-section">
+            <div class="contact contact-image-icons">
 
                 <div class="contact-image">
-                    <img src="./assets/cait-contact-bw.jpg" alt="Headshot of Caitlin English">
+                    <img src="./assets/cait-contact.jpg" alt="Headshot of Caitlin English">
                 </div>
 
-                <div class="contact-icons">
+                <div class="icons">
                     <ul>
                         <li><a href="mailto:caitlin.english87@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-solid fa-envelope"></i>
@@ -105,6 +79,26 @@
                             </a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="contact">
+                <form id="contact-form" action="https://formspree.io/f/mzbwrqde" method="POST">
+                    <fieldset>
+
+                        <label for="name" class="sr-only">Name></label>
+                        <input type="text" name="name" id="name" placeholder="name" maxlength="60" required>
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email" maxlength="60" required>
+
+                        <label for="submit" class="sr-only">write me a message</label>
+                        <textarea id="submit" name="message" placeholder="write me a message" maxlength="500"
+                            required></textarea>
+
+                        <button type="submit" class="submit">Send Message</button>
+
+                    </fieldset>
+                    <p id="form-status"></p>
+                </form>
             </div>
         </section>
     </main>

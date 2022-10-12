@@ -7,6 +7,10 @@
     .home-text {
         padding-top: 10px;
     }
+
+    input {
+        width: 100%;
+    }
 }
 
 @media ( max-width: 800px ){
@@ -21,12 +25,6 @@
 
     .home-image {
         width: 100%;
-    }
-
-    .tagline {
-        left: 4%;
-        top: 4%;
-        width: 200px;
     }
 
     .about-flex-container {
@@ -55,50 +53,80 @@
         font-size: 1.3rem;
     }
 
-    .form-inputs {
-        flex-direction: column;
-        input {
-            width: 100%;
-        }   
+    fieldset {
+        padding-left: 20px;
     }
 
-    .contact-flex-container {
-        width: 80%;
-    }
+    .icons ul li {
+        margin-bottom: 25px;
+        }
 }
 
 @media ( max-width: 650px ){
     .tagline {
         width: 175px;
     }
+
+    .project-header {
+        margin: 30px 0;
+    }
+
+    .btn {
+        right: 2px;
+    }
+
 }
 
 @media ( max-width: 500px ){
 
-    h1 {
-        transition: 0.3s ease all;
-        letter-spacing: 0.12rem;
+    nav ul {
+        margin-bottom: 0;
     }
 
-    textarea {
-        height: 100px;
-        margin: 10px 0;
+    h1 {
+        transition: 0.3s ease all;
+        letter-spacing: 0.3rem;
+    }
+
+    .project {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .contact-header {
+        margin: 30px 0;
+    }
+
+    .contact-section {
+        flex-direction: column-reverse;
+        .contact {
+        width: 100%;
+        }
+    }
+
+    fieldset {
+        padding-left: 0;
     }
 
     .contact-icons ul li {
         margin-bottom: 20px;
     }
 
-    .contact-flex-container {
-        width: 100%;
-    }
-
 }
 
 @media ( max-width: 400px ) {
 
+    h1 {
+        letter-spacing: 0.25rem;
+    }
+
     .tagline {
         width: 135px;
+    }
+
+    .btn {
+        right: -1px;
+        font-size: 1.1rem;
     }
 
     footer p {
