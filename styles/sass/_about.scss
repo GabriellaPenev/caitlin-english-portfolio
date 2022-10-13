@@ -2,11 +2,8 @@
 .about-header {
     text-align: left;
     padding-top: 30px;
-    span {
-        display: block;
-        padding: 10px 0;
-        font-size: clamp(0.8rem, 3.5vw, 1.1rem);
-    }
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .about-text {
@@ -14,6 +11,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: left;
+        line-height: 1.1rem;
         p {
             margin: 10px 0;
         }

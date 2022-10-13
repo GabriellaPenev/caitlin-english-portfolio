@@ -6,8 +6,8 @@
 
 .project-header {
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.2rem;
@@ -29,8 +29,9 @@
     background: linear-gradient(to right, rgba(47, 55, 63, 1), rgba(47, 55, 63, .35));
 }
 
-.produced, 
-.in-dev {
+.produced,
+.in-dev, 
+.samples {
     display: flex;
     flex-wrap: wrap;
 }
@@ -40,19 +41,24 @@
     flex-direction: column;
     width: calc(100% / 3);
     padding: 0 10px 60px 10px;
-    justify-content: space-between;
-    .project-text {
-        text-align: center;
-        h2 {
-            margin-top: 0;
-            text-transform: capitalize;
-            font-size: clamp(0.95rem, 3.5vw, 1.2rem);
-            font-weight: 400;
-        }
+    text-align: left;
+    p {
+        margin-bottom: 0;
+    }
+    .credits {
+        display: block;
+        font-weight: 400;
+        line-height: 0.9rem;
+    }
+    h2 {
+        margin: 10px 0 0;
+        text-transform: capitalize;
+        font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+        font-weight: 400;
     }
 }
 
-.project-text a {
+.project a {
     position: relative;
     padding: 2px 0;
     font-weight: 400;
@@ -120,4 +126,3 @@ a span {
         transform: translateX(-1px) rotate(0deg);
     }
 }
-
