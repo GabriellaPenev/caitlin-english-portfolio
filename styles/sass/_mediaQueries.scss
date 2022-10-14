@@ -105,13 +105,12 @@
     }
 
     fieldset {
-        padding-left: 0;
+        padding: 0;
     }
 
     .contact-icons ul li {
         margin-bottom: 20px;
     }
-
 }
 
 @media ( max-width: 400px ) {
@@ -136,10 +135,6 @@
 
     nav ul li {
         padding: 0 4px;
-    }
-
-    .projects-flex-container > div:nth-child(1) > h2:nth-child(1) {
-        margin-top: 0;
     }
 
 }

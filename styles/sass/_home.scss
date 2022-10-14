@@ -42,6 +42,33 @@
     animation-delay: 6.5s;
 }
 
+.about-header {
+    text-align: left;
+    padding-top: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        line-height: 1.1rem;
+        p {
+            margin: 10px 0;
+        }
+        a {
+            font-weight: 500;
+        }
+}
+
+.italics {
+    font-style: italic;
+}
+
+
+
 @keyframes blink {
     0% {
         opacity: 1;

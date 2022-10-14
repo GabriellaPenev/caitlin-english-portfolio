@@ -49,8 +49,14 @@ fieldset {
     position: relative;
 }
 
+.about-text a {
+    color: #2f373f;
+    position: relative;
+}
+
 nav ul a::before,
-footer p a::before {
+footer p a::before, 
+.about-text a::before {
     content: "";
     position: absolute;
     left: 0px;
@@ -64,6 +70,8 @@ footer p a::before {
 nav ul a:hover::before, 
 nav ul a:focus::before,
 footer p a:hover::before, 
-footer p a:focus::before {
+footer p a:focus::before, 
+.about-text a:hover::before, 
+.about-text a:focus::before {
     width: 100%;
 }

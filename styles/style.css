@@ -285,8 +285,14 @@ fieldset {
   position: relative;
 }
 
+.about-text a {
+  color: #2f373f;
+  position: relative;
+}
+
 nav ul a::before,
-footer p a::before {
+footer p a::before,
+.about-text a::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -301,7 +307,9 @@ footer p a::before {
 nav ul a:hover::before,
 nav ul a:focus::before,
 footer p a:hover::before,
-footer p a:focus::before {
+footer p a:focus::before,
+.about-text a:hover::before,
+.about-text a:focus::before {
   width: 100%;
 }
 
@@ -408,6 +416,38 @@ nav ul {
           animation-delay: 6.5s;
 }
 
+.about-header {
+  text-align: left;
+  padding-top: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  line-height: 1.1rem;
+}
+.about-text p {
+  margin: 10px 0;
+}
+.about-text a {
+  font-weight: 500;
+}
+
+.italics {
+  font-style: italic;
+}
+
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
@@ -437,31 +477,6 @@ nav ul {
     opacity: 0;
   }
 }
-.about-header {
-  text-align: left;
-  padding-top: 30px;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-.about-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: left;
-  line-height: 1.1rem;
-}
-.about-text p {
-  margin: 10px 0;
-}
-
 .project-header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -859,7 +874,7 @@ footer p a::before {
     width: 100%;
   }
   fieldset {
-    padding-left: 0;
+    padding: 0;
   }
   .contact-icons ul li {
     margin-bottom: 20px;
@@ -883,8 +898,5 @@ footer p a::before {
   }
   nav ul li {
     padding: 0 4px;
-  }
-  .projects-flex-container > div:nth-child(1) > h2:nth-child(1) {
-    margin-top: 0;
   }
 }
