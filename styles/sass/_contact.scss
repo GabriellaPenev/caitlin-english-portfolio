@@ -72,7 +72,7 @@ textarea {
     li {
         transition: .3s ease all;
         opacity: 0.8;
-        margin-bottom: 80px;
+        margin-bottom: 75px;
         :active {
             transform: scale(0.9);
         }
@@ -83,7 +83,7 @@ textarea {
         }
         a {
             font-size: clamp(2rem, 5vw, 2.6rem);
-            color: #2f373f;  
+            color: white;  
             transition: .3s ease all;
         }
     }
