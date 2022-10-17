@@ -1,4 +1,3 @@
-
 .contact-header {
     margin: 40px 0;
     text-transform: capitalize;
@@ -19,14 +18,14 @@ fieldset {
     align-items: flex-start;
     padding-left: 45px;
     margin: 0;
-    input, 
+    input,
     textarea {
         border: none;
         border-bottom: 1px solid #2f373f;
         text-align: start;
         padding: 10px 0;
-        }
-        :focus {
+    }
+    :focus {
         outline: none;
     }
 }
@@ -42,18 +41,21 @@ textarea {
     margin: 20px 0;
 }
 
-.submit {
+button.submit {
+    cursor: pointer;
     border: none;
-    border-bottom: 1px solid #2f373f;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+    border-bottom: #2f373f 1px solid;
+    color: #2f373f;
     background-color: transparent;
-    font-weight: normal;
+    padding-bottom: 8px;
+    transition: 0.3s ease-in all;
     &:hover,
     &:focus {
-        cursor: pointer;
+        transform:translateY(5px);
+        letter-spacing: 1.5px;
+        color: black;
     }
-} 
+}
 
 .contact-image-icons {
     position: relative;
@@ -76,14 +78,14 @@ textarea {
         :active {
             transform: scale(0.9);
         }
-        &:hover, 
+        &:hover,
         &:focus {
             opacity: 1;
             scale: (1.1);
         }
         a {
             font-size: clamp(2rem, 5vw, 2.6rem);
-            color: #c4c7c8;  
+            color: #c4c7c8;
             transition: .3s ease all;
         }
     }
