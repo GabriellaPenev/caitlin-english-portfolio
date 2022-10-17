@@ -31,7 +31,10 @@ h1::before {
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 30px 0;
     text-transform: uppercase;
+    li {
+        padding: 0 15px;
+    }
 }

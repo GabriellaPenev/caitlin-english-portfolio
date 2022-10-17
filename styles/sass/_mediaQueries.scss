@@ -92,11 +92,15 @@
 
     nav ul {
         margin: 0px;
+        a {
+            font-size: 0.7rem;
+        }
     }
 
     h1 {
         transition: 0.3s ease all;
         letter-spacing: 0.3rem;
+        margin: 25px 0 15px;
     }
 
     .project {
