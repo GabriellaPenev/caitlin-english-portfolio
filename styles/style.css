@@ -318,6 +318,26 @@ footer p a:focus::before,
   width: 100%;
 }
 
+.skipLink {
+  font-size: 0.8rem;
+  height: 30px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.skipLink:focus {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 .h1-container {
   display: -webkit-box;
   display: -ms-flexbox;

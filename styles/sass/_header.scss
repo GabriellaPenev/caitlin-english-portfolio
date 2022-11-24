@@ -1,3 +1,17 @@
+.skipLink {
+    font-size: 0.8rem;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    &:focus {
+        transform: translateY(0%);  
+    }
+}
 
 .h1-container {
     display: flex; 
