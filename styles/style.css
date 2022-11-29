@@ -735,15 +735,13 @@ button.submit:hover, button.submit:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0;
 }
 .icons ul li {
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
   opacity: 0.8;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
 }
 .icons ul li :active {
   -webkit-transform: scale(0.9);
@@ -754,7 +752,7 @@ button.submit:hover, button.submit:focus {
   scale: 1.1;
 }
 .icons ul li a {
-  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-size: clamp(2rem, 5vw, 2.4rem);
   color: #c4c7c8;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;

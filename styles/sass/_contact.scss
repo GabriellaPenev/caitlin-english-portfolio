@@ -72,11 +72,11 @@ button.submit {
 .icons ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin: 0;
     li {
         transition: .3s ease all;
         opacity: 0.8;
-        margin-bottom: 75px;
+        margin-bottom: 60px;
         :active {
             transform: scale(0.9);
         }
@@ -86,7 +86,7 @@ button.submit {
             scale: (1.1);
         }
         a {
-            font-size: clamp(2rem, 5vw, 2.6rem);
+            font-size: clamp(2rem, 5vw, 2.4rem);
             color: #c4c7c8;
             transition: .3s ease all;
         }
