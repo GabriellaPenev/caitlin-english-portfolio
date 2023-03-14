@@ -1,3 +1,9 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .contact-header {
     text-transform: capitalize;
     font-size: clamp(0.9rem, 5vw, 1.8rem);
@@ -9,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     .contact {
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -50,13 +56,26 @@ button.submit {
     color: #2f373f;
     background-color: transparent;
     padding-bottom: 8px;
-    transition: 0.3s ease-in all;
+    transition: 0.35s ease-in all;
     &:hover,
     &:focus {
-        transform:translateY(5px);
         letter-spacing: 1.5px;
-        color: black;
     }
+}
+
+.rep {
+    text-align: left;
+    padding-left: 45px;
+    color: #2f373f;
+    p {
+        font-size: clamp(0.65rem,1vw, 0.9rem);
+    }
+        span {
+        display: block;
+    }
+    p a {
+        position: relative;
+    }   
 }
 
 .contact-image-icons {

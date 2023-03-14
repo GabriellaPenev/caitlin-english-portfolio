@@ -17,6 +17,12 @@
     }
 }
 
+@media ( max-width: 1160px){
+    .contact-image-icons .icons {
+        top: 15%;
+    }
+}
+
 @media ( max-width: 800px ){
 
     .wrapper {
@@ -62,15 +68,15 @@
         .contact {
         width: 100%;
         }
-    .icons ul li {
-        margin-bottom: 10px;
-        }
     }
 
     fieldset {
         padding-left: 0px;
     }
 
+    .rep {
+        padding-left: 0;
+    }
 }
 
 @media ( max-width: 650px ){

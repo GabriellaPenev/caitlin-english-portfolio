@@ -296,8 +296,9 @@ fieldset {
 }
 
 nav ul a::before,
-footer p a::before,
-.about-text a::before {
+footer p span a::before,
+.about-text a::before,
+.rep p a::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -311,8 +312,10 @@ footer p a::before,
 
 nav ul a:hover::before,
 nav ul a:focus::before,
-footer p a:hover::before,
-footer p a:focus::before,
+.rep p a:hover::before,
+.rep p a:focus::before,
+footer p span a:hover::before,
+footer p span a:focus::before,
 .about-text a:hover::before,
 .about-text a:focus::before {
   width: 100%;
@@ -644,6 +647,19 @@ a span::after {
           transform: translateX(-1px) rotate(0deg);
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .contact-header {
   text-transform: capitalize;
   font-size: clamp(0.9rem, 5vw, 1.8rem);
@@ -660,7 +676,7 @@ a span::after {
           justify-content: space-between;
 }
 .contact-section .contact {
-  width: 50%;
+  width: 100%;
 }
 
 fieldset {
@@ -707,14 +723,26 @@ button.submit {
   color: #2f373f;
   background-color: transparent;
   padding-bottom: 8px;
-  -webkit-transition: 0.3s ease-in all;
-  transition: 0.3s ease-in all;
+  -webkit-transition: 0.35s ease-in all;
+  transition: 0.35s ease-in all;
 }
 button.submit:hover, button.submit:focus {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
   letter-spacing: 1.5px;
-  color: black;
+}
+
+.rep {
+  text-align: left;
+  padding-left: 45px;
+  color: #2f373f;
+}
+.rep p {
+  font-size: clamp(0.65rem, 1vw, 0.9rem);
+}
+.rep span {
+  display: block;
+}
+.rep p a {
+  position: relative;
 }
 
 .contact-image-icons {
@@ -761,12 +789,13 @@ button.submit:hover, button.submit:focus {
 footer p {
   margin: 100px 0 20px;
   font-size: 0.6rem;
+  color: #2f373f;
 }
 footer p a {
   font-size: 0.6rem;
   display: inline-block;
 }
-footer p a::before {
+footer p span a::before {
   opacity: 0.8;
   bottom: -1px;
 }
@@ -803,6 +832,11 @@ footer p a::before {
   }
   input {
     width: 100%;
+  }
+}
+@media (max-width: 1160px) {
+  .contact-image-icons .icons {
+    top: 15%;
   }
 }
 @media (max-width: 800px) {
@@ -853,11 +887,11 @@ footer p a::before {
   .contact-section .contact {
     width: 100%;
   }
-  .contact-section .icons ul li {
-    margin-bottom: 10px;
-  }
   fieldset {
     padding-left: 0px;
+  }
+  .rep {
+    padding-left: 0;
   }
 }
 @media (max-width: 650px) {

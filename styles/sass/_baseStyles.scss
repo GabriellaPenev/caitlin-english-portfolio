@@ -60,8 +60,9 @@ fieldset {
 }
 
 nav ul a::before,
-footer p a::before, 
-.about-text a::before {
+footer p span a::before, 
+.about-text a::before,
+.rep p a::before {
     content: "";
     position: absolute;
     left: 0px;
@@ -74,8 +75,10 @@ footer p a::before,
 
 nav ul a:hover::before, 
 nav ul a:focus::before,
-footer p a:hover::before, 
-footer p a:focus::before, 
+.rep p a:hover::before,
+.rep p a:focus::before,
+footer p span a:hover::before, 
+footer p span a:focus::before, 
 .about-text a:hover::before, 
 .about-text a:focus::before {
     width: 100%;
